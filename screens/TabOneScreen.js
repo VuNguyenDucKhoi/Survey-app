@@ -1,10 +1,15 @@
 import * as React from 'react';
-import { StyleSheet } from 'react-native';
+import { StyleSheet, SafeAreaView } from 'react-native';
 import { WebView } from 'react-native-webview';
 
 export default class App extends React.Component {
     render() {
-        return <WebView source={{ uri: 'https://survey-nckh.glitch.me' }} style={{ marginTop: 20 }} />;
+        return (
+
+                <WebView source={{ uri: 'https://khaosat.netlify.app' }} style={{ marginTop: 20, backgroundColor: "#fff" }} />
+
+            
+        );
     }
 }
 
